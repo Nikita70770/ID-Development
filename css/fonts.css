@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Century-Gothic";
+  src: url(../fonts/CenturyGothic.woff2);
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url(../fonts/Gilroy-Light.woff2);
+}
+
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url(../fonts/Gilroy-Black.woff2);
+}
