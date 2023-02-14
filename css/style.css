@@ -1,78 +1,195 @@
 @import url(./reset.css);
 @import url(./fonts.css);
 
+body,
+html {
+    height: 100%;
+}
+
 body {
-  font-family: "Gilroy-Light";
-  font-size: 14px;
-  background-color: #000;
+    min-width: 1920px;
+    font-family: 'Gilroy-Light';
+    font-size: 24px;
+    /* font-size: 14px; */
+    color: #fff;
+    background-color: #000;
 }
 
 .container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Header */
 
 .header {
-  font-family: "Century-Gothic";
-  background-color: #000;
-  /* box-shadow: 0px 15px 30px
-    linear-gradient(180deg, #651529, #732b3d, #834252, #fff); */
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Century-Gothic';
+    background-color: #000;
 }
 
-.header::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 25px;
-  padding-top: 25px;
-  background: linear-gradient(180deg, #651529, #611427, #5d1325, #591223,
-      #551122, #4d101f, #4a0f1e, #430e1b, #400d1a, #390c17, #360b16,
-      #330b15, #300a13, #2d0912, #2a0911, #25080f, #23070e, #1f060c,
-      #1c060b, #18050a, #160409, #140408, #120407, #100307, #0f0306,
-      #0d0305, #0c0205, #0a0204, #090204, #080203, #020101, #020002,
-      #010102, #010101);
-}
+/* Header Navigation */
 
 .header-nav {
-  padding: 5px 0;
-  display: flex;
-  justify-content: space-between;
+    flex: 0 1 auto;
+}
+
+.header-nav::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    background: linear-gradient(
+        180deg,
+        #651529,
+        #611427,
+        #5d1325,
+        #591223,
+        #551122,
+        #511120,
+        #4d101f,
+        #4a0f1e,
+        #430e1b,
+        #400d1a,
+        #390c17,
+        #360b16,
+        #330b15,
+        #300a13,
+        #2d0912,
+        #2a0911,
+        #25080f,
+        #23070e,
+        #1f060c,
+        #1c060b,
+        #18050a,
+        #160409,
+        #140408,
+        #120407,
+        #100307,
+        #0f0306,
+        #0d0305,
+        #0c0205,
+        #0a0204,
+        #090204,
+        #080203,
+        #020101,
+        #020002,
+        #010102,
+        #010101
+    );
+}
+
+.header-nav-inner {
+    width: 100%;
+    padding: 20px 0;
+    /* padding: 5px 0; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: #f4f4f4;
+    display: flex;
+    align-items: center;
 }
 
-.logo img {
-  max-width: 30px;
-  width: 100%;
+/* .logo img {
+    max-width: 30px;
+    width: 100%;
+} */
+
+.logo-name {
+    margin-left: 15px;
 }
 
-.logo p {
-  margin-left: 10px;
+.nav-menu {
+    max-width: 56%;
+    width: 100%;
 }
 
 .nav-menu ul {
-  padding: 15px 0 10px 0;
-  display: flex;
-  column-gap: 80px;
-  color: #f4f4f4;
+    padding: 15px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #f4f4f4;
 }
 
 .nav-menu ul li:hover {
-  color: #be264c;
+    color: #be264c;
 }
 
-.headr {
-  margin: 0;
+/* Header Content */
+
+.header-content {
+    flex: 1 1 auto;
+    background: url(../img/header/header-background.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
-/*    "Century-Gothic"
+.header-info-company {
+    max-width: 64%;
+    /* max-width: 49%; */
+}
+
+.info-company-title {
+    margin-top: 20px;
+    font-family: 'Gilroy-Black';
+    font-size: 48px;
+    /* font-size: 24px; */
+}
+
+.info-company-title span {
+    color: #be264c;
+}
+
+.info-company-desc {
+    /* margin-top: 32px; */
+    margin-top: 60px;
+    padding: 20px 0 30px 25px;
+    border-left: 4px solid #be264c;
+}
+
+.info-company-text {
+    font-size: 30px;
+    /* font-size: 15px; */
+}
+
+.info-company-list {
+    /* margin-top: 47px; */
+    margin-top: 95px;
+    display: flex;
+}
+
+.info-company-item:nth-child(2) {
+    margin: 0 120px 0 70px;
+}
+
+.info-company-item span {
+    font-family: 'Gilroy-Black';
+    font-size: 130px;
+    /* font-size: 65px; */
+}
+
+.btn-leave-request {
+    /* margin-top: 45px; */
+    margin-top: 90px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 30px;
+    /* font-size: 15px; */
+    background-color: #be264c;
+}
+
+.btn-leave-request:active {
+    transform: translateY(4px);
+}
+
+/*    
+      Шрифты
+      "Century-Gothic"
       "Gilroy-Light"
       "Gilroy-Black" 
 */
