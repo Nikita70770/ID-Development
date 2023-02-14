@@ -124,7 +124,7 @@ body {
 
 .header-content {
     flex: 1 1 auto;
-    background: url(../img/header/header-background.png) no-repeat;
+    background: url(img/header/header-background.png) no-repeat;
     background-position: center center;
     background-size: contain;
 }
