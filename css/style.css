@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-    width: 1470px;
-    padding: 0 15px 0 15px;
+    width: 1500px;
+    padding: 0 30px 0 30px;
     margin: 0 auto;
 }
 
@@ -93,11 +93,6 @@ body {
     margin-left: 15px;
 }
 
-/* .nav-menu {
-    max-width: 56%;
-    width: 100%;
-} */
-
 .nav-list {
     padding: 15px 0 10px 0;
     display: flex;
@@ -125,7 +120,8 @@ body {
 
 .home {
     position: relative;
-    min-height: 995px;
+    min-height: 605px;
+    /* min-height: 995px; */
 }
 
 .home-content {
@@ -173,6 +169,7 @@ body {
     padding: 15px 40px;
     border-radius: 5px;
     font-size: 30px;
+    text-align: center;
     background-color: #be264c;
 }
 
