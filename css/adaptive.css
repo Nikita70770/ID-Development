@@ -1,0 +1,162 @@
+@media (max-width: 1469px) {
+    .container {
+        width: 100%;
+    }
+
+    .nav-list li:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    body {
+        font-size: 20px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-menu.open .nav-list {
+        padding: 50px 40px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        font-size: 34px;
+    }
+
+    .nav-button {
+        display: block;
+        margin: 15px 15px 0 0;
+        z-index: 9;
+    }
+
+    .home-title {
+        font-size: 40px;
+    }
+
+    .home-text {
+        font-size: 24px;
+    }
+
+    .home-list {
+        margin-top: 75px;
+    }
+
+    .home-list-item span {
+        font-size: 100px;
+    }
+
+    .btn-leave-request {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 999px) {
+    body {
+        font-size: 18px;
+    }
+
+    .home-content {
+        max-width: 575px;
+    }
+
+    .home-title {
+        font-size: 32px;
+    }
+
+    .home-text {
+        font-size: 22px;
+    }
+
+    .home-list-item:nth-child(2) {
+        margin: 0 80px 0 65px;
+    }
+
+    .home-list-item span {
+        font-size: 90px;
+    }
+
+    .btn-leave-request {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-title {
+        font-size: 24px;
+    }
+
+    .home-desc {
+        padding: 15px 0 25px 20px;
+    }
+
+    .home-text {
+        font-size: 18px;
+    }
+
+    .home-list {
+        margin-top: 65px;
+    }
+
+    .home-list-item span {
+        font-size: 80px;
+    }
+
+    .btn-leave-request {
+        margin-top: 80px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 479px) {
+    .home-content {
+        width: 100%;
+    }
+
+    .home-title {
+        font-size: 24px;
+    }
+
+    .home-text {
+        font-size: 17px;
+    }
+
+    .home-list {
+        margin-top: 55px;
+        flex-direction: column;
+        row-gap: 40px;
+        text-align: center;
+    }
+
+    .home-list-item:nth-child(2) {
+        margin: 0;
+    }
+
+    .home-list-item span {
+        font-size: 70px;
+    }
+
+    .btn-leave-request {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 319px) {
+    .home-text {
+        font-size: 12px;
+    }
+
+    .home-list-item span {
+        font-size: 60px;
+    }
+}

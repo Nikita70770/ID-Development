@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/adaptive.css" />
         <title>ID-development</title>
     </head>
     <body>
@@ -15,14 +16,21 @@
                             <img src="img/header/logo.jpg" alt="Logotip" />
                             <h2 class="logo-name">development</h2>
                         </a>
-                        <nav class="nav-menu">
-                            <ul>
+                        <nav id="nav" class="nav-menu">
+                            <ul class="nav-list">
                                 <li><a href="#">услуги</a></li>
                                 <li><a href="#">портфолио</a></li>
                                 <li><a href="#">о нас</a></li>
                                 <li><a href="#">заказать разработку</a></li>
                             </ul>
                         </nav>
+                        <button id="nav-btn" class="nav-button">
+                            <img
+                                id="nav-btn-img"
+                                src="img/header/navigation/hamburger01.png"
+                                alt="Nav button"
+                            />
+                        </button>
                     </div>
                 </div>
             </div>
@@ -69,40 +77,6 @@
                 </div>
             </section>
         </main>
+        <script src="js/script.js"></script>
     </body>
 </html>
-
-<!-- <div class="header-content">
-    <div class="container">
-        <div class="header-info-company">
-            <h1 class="info-company-title">
-                Мы команда разработчиков, которая верит в силу IT в
-                <span>любом бизнесе</span>
-            </h1>
-            <div class="info-company-desc">
-                <p class="info-company-text">
-                    Ежедневно мы делаем вклад<br />
-                    в прогресс компаний нашими разрабтками <br />
-                    для автоматизаций бизнес процессов
-                </p>
-            </div>
-            <ul class="info-company-list">
-                <li class="info-company-item">
-                    <span>1</span><br />
-                    год <br />на рынке
-                </li>
-                <li class="info-company-item">
-                    <span>25</span><br />успешных<br />
-                    проектов
-                </li>
-                <li class="info-company-item">
-                    <span>50</span><br />разработнных<br />
-                    сервисов
-                </li>
-            </ul>
-            <button class="btn-leave-request">
-                Оставить заявку
-            </button>
-        </div>
-    </div>
-</div> -->

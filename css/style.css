@@ -93,20 +93,32 @@ body {
     margin-left: 15px;
 }
 
-.nav-menu {
+/* .nav-menu {
     max-width: 56%;
     width: 100%;
-}
+} */
 
-.nav-menu ul {
+.nav-list {
     padding: 15px 0 10px 0;
     display: flex;
-    justify-content: space-between;
     color: #f4f4f4;
 }
 
-.nav-menu ul li:hover {
+.nav-list li:not(:last-child) {
+    margin-right: 80px;
+}
+
+.nav-list li:hover {
     color: #be264c;
+}
+
+.nav-button {
+    display: none;
+}
+
+.nav-button img {
+    width: 80%;
+    height: 80%;
 }
 
 /* Home Content */
@@ -155,8 +167,8 @@ body {
 }
 
 .btn-leave-request {
-    display: inline-block;
-    min-width: 310px;
+    display: block;
+    width: 335px;
     margin-top: 90px;
     padding: 15px 40px;
     border-radius: 5px;
@@ -181,64 +193,5 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: left top;
 }
-
-/* 
-
-.header-info-company {
-    max-width: 64%;
-}
-
-.info-company-title {
-    margin-top: 20px;
-    font-family: 'Gilroy-Black';
-    font-size: 48px;
-}
-
-.info-company-title span {
-    color: #be264c;
-}
-
-.info-company-desc {
-    margin-top: 60px;
-    padding: 20px 0 30px 25px;
-    border-left: 4px solid #be264c;
-}
-
-.info-company-text {
-    font-size: 30px;
-}
-
-.info-company-list {
-    margin-top: 95px;
-    display: flex;
-}
-
-.info-company-item:nth-child(2) {
-    margin: 0 120px 0 70px;
-}
-
-.info-company-item span {
-    font-family: 'Gilroy-Black';
-    font-size: 130px;
-}
-
-.btn-leave-request {
-    margin-top: 90px;
-    padding: 15px 40px;
-    border-radius: 5px;
-    font-size: 30px;
-    background-color: #be264c;
-}
-
-.btn-leave-request:active {
-    transform: translateY(4px);
-} */
-
-/*    
-      Шрифты
-      "Century-Gothic"
-      "Gilroy-Light"
-      "Gilroy-Black" 
-*/
