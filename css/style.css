@@ -171,6 +171,15 @@ body {
     font-size: 30px;
     text-align: center;
     background-color: #be264c;
+    transition: all 600ms ease-in-out;
+}
+
+.btn-leave-request:hover {
+    /* border: 2px solid #315da2; */
+    border-color: #315da2;
+    background-color: #000;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    transition: all 250ms ease-in-out;
 }
 
 .btn-leave-request:active {
