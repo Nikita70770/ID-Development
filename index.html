@@ -25,11 +25,7 @@
                             </ul>
                         </nav>
                         <button id="nav-btn" class="nav-button">
-                            <img
-                                id="nav-btn-img"
-                                src="img/header/navigation/hamburger01.png"
-                                alt="Nav button"
-                            />
+                            <img id="nav-btn-img" src="img/header/navigation/hamburger01.png" alt="Nav button" />
                         </button>
                     </div>
                 </div>
@@ -79,10 +75,14 @@
                     </div>
                 </div>
                 <div class="home-bg-image">
-                    <img
-                        src="img/home/home-background.png"
-                        alt="Background Image"
-                    />
+                    <picture>
+                        <source srcset="img/home/background/home-background1366px.png" media="(max-width: 1499px)" />
+                        <source srcset="img/home/background/home-background1024px.png" media="(max-width: 999px)" />
+                        <source srcset="img/home/background/home-background800px.png" media="(max-widht: 767px)" />
+                        <source srcset="img/home/background/home-background480px.png" media="(max-width: 479px)" />
+                        <source srcset="img/home/background/home-background320px.png" media="(max-width: 319px)" />
+                        <img src="img/home/background/home-background.png" alt="Background Image" />
+                    </picture>
                 </div>
             </section>
         </main>

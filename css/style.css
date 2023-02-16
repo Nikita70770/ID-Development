@@ -157,19 +157,10 @@ body {
     margin: 0 120px 0 70px;
 }
 
-/* .home-list-item:nth-child(2) {
-    margin: 0 120px 0 70px;
-} */
-
 .block-list h2 span {
     font-family: 'Gilroy-Black';
     font-size: 130px;
 }
-
-/* .home-list-item span {
-    font-family: 'Gilroy-Black';
-    font-size: 130px;
-} */
 
 .btn-leave-request {
     display: block;
@@ -199,5 +190,5 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: left top;
+    object-position: center center;
 }
