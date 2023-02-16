@@ -120,7 +120,7 @@ body {
 
 .home {
     position: relative;
-    min-height: 605px;
+    min-height: 605px; /*????????????????*/
     /* min-height: 995px; */
 }
 
@@ -153,14 +153,23 @@ body {
     display: flex;
 }
 
-.home-list-item:nth-child(2) {
+.block-list:nth-child(2) {
     margin: 0 120px 0 70px;
 }
 
-.home-list-item span {
+/* .home-list-item:nth-child(2) {
+    margin: 0 120px 0 70px;
+} */
+
+.block-list h2 span {
     font-family: 'Gilroy-Black';
     font-size: 130px;
 }
+
+/* .home-list-item span {
+    font-family: 'Gilroy-Black';
+    font-size: 130px;
+} */
 
 .btn-leave-request {
     display: block;
