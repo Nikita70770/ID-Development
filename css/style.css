@@ -107,13 +107,9 @@ body {
     color: #be264c;
 }
 
-.nav-button {
+.checkbox-nav-menu,
+.hamburger-lines {
     display: none;
-}
-
-.nav-button img {
-    width: 80%;
-    height: 80%;
 }
 
 /* Home Content */
@@ -175,7 +171,6 @@ body {
 }
 
 .btn-leave-request:hover {
-    /* border: 2px solid #315da2; */
     border-color: #315da2;
     background-color: #000;
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
