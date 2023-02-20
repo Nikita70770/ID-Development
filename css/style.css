@@ -108,6 +108,8 @@ body {
     display: none;
 }
 
+/* Main */
+
 /* Home Content */
 
 .home {
@@ -159,11 +161,12 @@ body {
 
 .btn-leave-request {
     display: block;
-    width: 335px;
+    max-width: 29%;
+    /* width: 335px; */
     margin-top: 90px;
     padding: 15px 0 15px 0;
     border-radius: 5px;
-    font-size: calc((100vw - 320px) / (1915 - 320) * (26 - 18) + 18px);
+    font-size: calc((100vw - 320px) / (1915 - 320) * (24 - 18) + 18px);
     text-align: center;
     background-color: #be264c;
     transition: all 600ms ease-in-out;
@@ -194,4 +197,10 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center center;
+}
+
+/* Services */
+
+.services {
+    margin-top: 230px;
 }

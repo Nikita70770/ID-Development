@@ -9,7 +9,7 @@
 
     .home-desc {
         margin-top: 60px;
-        padding: 10px 0 20px 15px;
+        padding: 15px 0 25px 20px;
         border-left-width: 3px;
     }
 
@@ -22,7 +22,6 @@
     }
 
     .btn-leave-request {
-        width: 265px;
         margin-top: 75px;
         padding-top: 15px;
     }
@@ -129,10 +128,6 @@
     .home-list {
         margin-top: 65px;
     }
-
-    .btn-leave-request {
-        width: 260px;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -159,7 +154,7 @@
     }
 
     .home-desc {
-        padding: 15px 0 25px 20px;
+        padding: 10px 0 20px 15px;
     }
 
     .home-list {
@@ -198,7 +193,7 @@
     }
 
     .btn-leave-request {
-        width: 255px;
+        max-width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -209,8 +204,16 @@
         padding: 0 20px 0 20px;
     }
 
+    .logo-name {
+        margin-left: 10px;
+    }
+
     .nav-menu .nav-list {
         font-size: 24px;
+    }
+
+    .hamburger-lines {
+        top: 25px;
     }
 
     .home-desc {
