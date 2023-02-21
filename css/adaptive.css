@@ -1,4 +1,6 @@
 @media (max-width: 1500px) {
+    /* Header Navigation */
+
     .nav-list li:not(:last-child) {
         margin-right: 50px;
     }
@@ -6,6 +8,8 @@
     .container {
         width: 100%;
     }
+
+    /* Home Content */
 
     .home-desc {
         margin-top: 60px;
@@ -28,6 +32,8 @@
 }
 
 @media (max-width: 1200px) {
+    /* Header Navigation */
+
     .header-nav-inner {
         position: relative;
     }
@@ -46,7 +52,6 @@
         flex-direction: column;
         justify-content: space-between;
         z-index: 5;
-        /* row-gap: 10px; */
     }
 
     .hamburger-lines .line:not(.checkbox-nav-menu) {
@@ -125,19 +130,23 @@
         transition: opacity 500ms;
     }
 
+    /* Home Content */
+
     .home-list {
         margin-top: 65px;
     }
+
+    /* Services */
 }
 
 @media (max-width: 1000px) {
-    /* body {
-        font-size: 18px;
-    } */
+    /* Header Navigation */
 
     .nav-menu .nav-list {
         font-size: 38px;
     }
+
+    /* Home Content */
 
     .home-content {
         max-width: 575px;
@@ -146,9 +155,13 @@
     .home-list-item:nth-child(2) {
         margin: 0 80px 0 65px;
     }
+
+    /* Services */
 }
 
 @media (max-width: 768px) {
+    /* Home Content */
+
     .home-content {
         max-width: 100%;
     }
@@ -164,12 +177,18 @@
     .btn-leave-request {
         margin-top: 80px;
     }
+
+    /* Services */
 }
 
 @media (max-width: 480px) {
+    /* Header Navigation */
+
     .nav-menu .nav-list {
         font-size: 28px;
     }
+
+    /* Home Content */
 
     .home-content {
         width: 100%;
@@ -197,12 +216,16 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Services */
 }
 
 @media (max-width: 320px) {
     .container {
         padding: 0 20px 0 20px;
     }
+
+    /* Header Navigation */
 
     .logo-name {
         margin-left: 10px;
@@ -216,8 +239,12 @@
         top: 25px;
     }
 
+    /* Home Content */
+
     .home-desc {
         padding: 8px 0 15px 10px;
         border-left-width: 2px;
     }
+
+    /* Services */
 }
