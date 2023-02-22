@@ -25,7 +25,6 @@ if(animElements.length > 0){
                     animElement.classList.remove("animate");
                 }
             }
-            // console.log(`animElemntPoint: ${animElemntPoint}`);
         }
     }
     function getCoords(elem){
@@ -37,12 +36,4 @@ if(animElements.length > 0){
         }
     }
 }
-
-// function getCoords(elem) {
-//     let itemCoord = elem.getBoundingClientRect();
-//     return{
-//         top: itemCoord.top + window.pageYOffset,
-//         left: itemCoord.left + window.pageXOffset
-//     }
-// }
 
