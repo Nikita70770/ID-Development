@@ -73,7 +73,8 @@ body {
         #020101,
         #020002,
         #010102,
-        #010101
+        #010101,
+        #000000
     );
 }
 
@@ -188,7 +189,7 @@ body {
     transform: translateY(4px);
 }
 
-.home-bg-image {
+.home-bg-animation {
     position: absolute;
     top: 0;
     left: 0;
@@ -197,11 +198,12 @@ body {
     z-index: -1;
 }
 
-.home-bg-image img {
+.home-bg-animation canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center center;
 }
 
 /* Services */
