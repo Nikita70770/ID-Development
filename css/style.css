@@ -233,7 +233,7 @@ body {
     background: var(--service-item-linear-gradient);
     z-index: -1;
     opacity: 0;
-    transition: opacity 1.5s ease;
+    transition: opacity 1s ease;
 }
 
 .block-service:hover::after {
@@ -295,9 +295,16 @@ body {
     transition: all 0.8s ease;
 }
 
-.block-service-text p {
+.block-service-text p,
+.block-service-subtitle {
     margin-right: 40px;
     text-align: right;
+}
+
+.block-service-subtitle {
+    margin-bottom: 20px;
+    font-family: 'Gilroy-Regular';
+    font-size: 24px;
 }
 
 .block-service-text p {
