@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(./variables.css);
 @import url(./fonts.css);
+@import url(./animations.css);
 
 html {
     font-size: 100%;
@@ -175,23 +176,31 @@ body {
     margin-top: 230px;
 }
 
-.services-content-header {
-    margin-bottom: 120px;
-}
-
-.services-content-header::before {
-    content: '';
-    display: block;
-    width: 100%;
+.services-content-header-line {
+    width: 1px;
     height: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     background-color: #be264c;
 }
 
-.services-content-header-inner {
+.services-content-header-line.animate {
+    animation: line-movement 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.services-content-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 120px;
+    transform: translateY(120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.services-content-header.animate {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .services-title {
@@ -199,14 +208,6 @@ body {
     font-family: 'Gilroy-Black';
     font-size: calc((100vw - 20rem) / (120 - 20) * (3 - 1.5) + 1.5rem);
     letter-spacing: 1px;
-    transform: translateY(120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-
-.services-title.animate {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .services-subtitle-block {
@@ -306,6 +307,14 @@ body {
     margin-bottom: 20px;
     font-family: 'Gilroy-Regular';
     font-size: calc((100vw - 20rem) / (120 - 20) * (1.875 - 0.75) + 0.75rem);
+    transform: translateY(150%);
+    opacity: 0;
+}
+
+.block-service-subtitle.animate {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.9s ease;
 }
 
 .block-service-text p {
