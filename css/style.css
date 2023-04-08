@@ -227,14 +227,65 @@ body {
     opacity: 1;
 }
 
-.block-service object {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
+.block-service {
+    position: relative;
 }
 
-.service-line {
+.block-service::after {
+    content: '';
     width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+            -135deg,
+            transparent 28px,
+            #651529 0,
+            #611427,
+            #5d1325,
+            #591223,
+            #551122,
+            #511120,
+            #4d101f,
+            #4a0f1e,
+            #430e1b,
+            #400d1a,
+            #390c17,
+            #360b16,
+            #330b15,
+            #300a13,
+            #2d0912,
+            #2a0911,
+            #25080f,
+            #23070e,
+            #1f060c,
+            #1c060b,
+            #18050a,
+            #160409,
+            #140408,
+            #120407,
+            #100307,
+            #0f0306,
+            #0d0305,
+            #0c0205,
+            #0a0204,
+            #090204,
+            #080203,
+            #020101,
+            #020002,
+            #010102,
+            #010101,
+            #000000
+        )
+        top right;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.block-service:hover::after {
+    opacity: 1;
 }
 
 .service-line {
