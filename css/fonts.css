@@ -1,14 +1,24 @@
 @font-face {
-  font-family: "Century-Gothic";
-  src: url(../fonts/CenturyGothic.woff2);
+    font-family: 'Gilroy-Regular';
+    src: url(../fonts/Gilroy-Regular.woff2);
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
-  src: url(../fonts/Gilroy-Light.woff2);
+    font-family: 'Century-Gothic';
+    src: url(../fonts/CenturyGothic.woff2);
 }
 
 @font-face {
-  font-family: "Gilroy-Black";
-  src: url(../fonts/Gilroy-Black.woff2);
+    font-family: 'Gilroy-Light';
+    src: url(../fonts/Gilroy-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(../fonts/Gilroy-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url(../fonts/Gilroy-Black.woff2);
 }
