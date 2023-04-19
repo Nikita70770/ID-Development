@@ -320,3 +320,67 @@ body {
 .block-service-text p {
     font-size: calc((100vw - 20rem) / (120 - 20) * (1.75 - 0.625) + 0.625rem);
 }
+
+/* Portfolio */
+
+.portfolio-header-menu {
+    margin-bottom: 80px;
+}
+
+.portfolio-list-filters {
+    display: flex;
+    column-gap: 30px;
+    font-size: 30px;
+}
+
+.portfolio-main {
+    display: flex;
+}
+
+.portfolio-sidebar-filters {
+    max-width: 20%;
+    width: 100%;
+}
+
+.portfolio-sidebar-menu {
+    text-transform: uppercase;
+}
+
+.portfolio-sidebar-menu > * {
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    max-width: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px 20px;
+}
+
+.project-card {
+    padding-bottom: 25vw;
+    position: relative;
+}
+
+.project-name {
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    font-family: 'Gilroy-Medium';
+    font-size: 40px;
+    color: #0d7ec9;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+}
