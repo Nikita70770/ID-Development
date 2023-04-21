@@ -34,7 +34,7 @@ function showProjects(arr){
         `<li>
             <article class="project-card" data-tags="all, ${project.type}">
                 <img src="${project.imageProject}" alt="Project Image" />
-                <h2 class="project-name">${project.name}</h2>
+                <h3 class="project-name">${project.name}</h3>
             </article>
         </li>` 
     });
