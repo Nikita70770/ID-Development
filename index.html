@@ -193,13 +193,13 @@
                         <div class="portfolio-header-menu">
                             <ul class="portfolio-list-filters">
                                 <li class="list-filters-item">
-                                    <button class="btn-all-projects">Все</button>
+                                    <button id="all" class="filter-btn active">Все</button>
                                 </li>
                                 <li class="list-filters-item">
-                                    <button class="applications">Приложения</button>
+                                    <button id="applications" class="filter-btn">Приложения</button>
                                 </li>
                                 <li class="list-filters-item">
-                                    <button class="btn-web-projects">Web-проекты</button>
+                                    <button id="web-projects" class="filter-btn">Web-проекты</button>
                                 </li>
                             </ul>
                         </div>
@@ -218,32 +218,7 @@
                                     <li>Lorem, ipsum dolor.</li>
                                 </ul>
                             </div>
-                            <div class="portfolio-content">
-                                <article class="project-card">
-                                    <img src="img/projects/web-projects/project_web_(1).jpg" alt="Project" />
-                                    <h2 class="project-name">Lorem</h2>
-                                </article>
-                                <article class="project-card">
-                                    <img src="img/projects/applications/project_app_(1).jpg" alt="Project" />
-                                    <h2 class="project-name">Lorem</h2>
-                                </article>
-                                <article class="project-card">
-                                    <img src="img/projects/web-projects/project_web_(2).jpg" alt="Project" />
-                                    <h2 class="project-name">Lorem</h2>
-                                </article>
-                                <article class="project-card">
-                                    <img src="img/projects/applications/project_app_(2).jpg" alt="Project" />
-                                    <h2 class="project-name">Lorem</h2>
-                                </article>
-                                <article class="project-card">
-                                    <img src="img/projects/web-projects/project_web_(3).jpg" alt="Project" />
-                                    <h2 class="project-name">Lorem</h2>
-                                </article>
-                                <article class="project-card">
-                                    <img src="img/projects/applications/project_app_(3).jpg" alt="Project" />
-                                    <h2 class="project-name">Lorem</h2>
-                                </article>
-                            </div>
+                            <ul class="portfolio-content-list"></ul>
                         </div>
                     </div>
                 </div>
@@ -252,6 +227,6 @@
         <script src="libs/jquery/jquery-3.6.4.min.js"></script>
         <script src="js/animation/scroll-anim.js"></script>
         <script src="js/animation/main-background-anim-test.js"></script>
-        <script src="js/data/projects.js"></script>
+        <script src="js/projects.js"></script>
     </body>
 </html>
