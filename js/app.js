@@ -33,8 +33,13 @@ function showProjects(arr){
         portfolioList.innerHTML += 
         `<li>
             <article class="project-card" data-tags="all, ${project.type}">
-                <img src="${project.imageProject}" alt="Project Image" />
-                <h3 class="project-name">${project.name}</h3>
+                <div class="project-card-image">
+                    <img src="${project.imageProject}" alt="Project Image"/>
+                </div>
+                <div class="project-card-text">
+                    <h3 class="project-name">${project.name}</h3>
+                    <p class="project-desc">${project.desc}</p>
+                </div>
             </article>
         </li>` 
     });

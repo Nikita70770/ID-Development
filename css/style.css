@@ -381,9 +381,7 @@ body {
 }
 
 .portfolio-sidebar-menu {
-    /* font-size: 22px; */
     font-size: calc((100vw - 20rem) / (120 - 20) * (1.375 - 0.5) + 0.5rem);
-    /* font-size: calc((100vw - 20rem) / (120 - 20) * (1 - 0.5) + 0.5rem); */
     text-transform: uppercase;
 }
 
@@ -403,28 +401,75 @@ body {
     gap: 20px 20px;
 }
 
+.portfolio-content-list li::after {
+    content: '';
+    display: block;
+    max-width: 100%;
+    width: 0;
+    height: 4px;
+    background-color: #af133d;
+    opacity: 0;
+    transition: opacity 0.35s;
+}
+
 .project-card {
-    padding-bottom: 25vw;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
-.project-name {
+.project-card-text {
+    max-width: 95%;
+    width: 100%;
     position: absolute;
-    left: 30px;
-    bottom: 15px;
-    font-family: 'Gilroy-Medium';
-    font-size: calc((100vw - 20rem) / (120 - 20) * (2.5 - 1) + 1rem);
-    color: #0d7ec9;
+    left: 20px;
+    bottom: 20px;
+    color: #af133d;
 }
 
-.project-card img {
+.project-name {
+    font-family: 'Gilroy-Medium';
+    font-size: calc((100vw - 20rem) / (120 - 20) * (2.5 - 0.875) + 0.875rem);
+}
+
+.project-desc {
+    transform: translateX(5%);
+    margin-top: 5px;
+    font-size: calc((100vw - 20rem) / (120 - 20) * (1.5 - 0.375) + 0.375rem);
+    font-weight: 600;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, transform 0.5s;
+}
+
+.project-card-image {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.project-card-image img {
     width: 100%;
     height: 100%;
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.8s ease;
+}
+
+.portfolio-content-list li:hover::after {
+    opacity: 1;
+    animation: line-movement 0.9s ease;
+    animation-fill-mode: forwards;
+}
+
+.portfolio-content-list li:hover > .project-card > .project-card-image img {
+    transform: scale(1.1);
+}
+
+.portfolio-content-list li:hover > .project-card > .project-card-text .project-desc {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
