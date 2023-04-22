@@ -8,7 +8,12 @@ showProjects(portfolio);
 filters.forEach((filterBtn) => {
     filterBtn.addEventListener("click", ()=>{
         let type = filterBtn.getAttribute("id");
-        
+
+        filters.forEach((filter) => {
+            filter.classList.remove("active");
+        });
+        filterBtn.classList.add("active");
+
         showProjects(getProjects(type));
     });
 });
@@ -33,7 +38,7 @@ function showProjects(arr){
 
     portfolioList.innerHTML = "";
     portfolioList.style.gridTemplateRows = `"repeat(${countRows}, 1fr)"`;
-    
+
     arr.forEach((project) => {
         portfolioList.innerHTML += 
         `<li>
@@ -46,6 +51,13 @@ function showProjects(arr){
                     <p class="project-desc">${project.desc}</p>
                 </div>
             </article>
-        </li>` 
+        </li>`;
     });
+
+    setTimeout(()=>{
+        let portfolioListItems = document.querySelectorAll("li");
+        portfolioListItems.forEach((item) => {
+            item.classList.add("active");
+        });
+    }, 50)
 }
