@@ -28,7 +28,12 @@ function getProjects(type){
 }
 
 function showProjects(arr){
+    let lenArr = arr.length;
+    let countRows = Math.ceil(lenArr);
+
     portfolioList.innerHTML = "";
+    portfolioList.style.gridTemplateRows = `"repeat(${countRows}, 1fr)"`;
+    
     arr.forEach((project) => {
         portfolioList.innerHTML += 
         `<li>
