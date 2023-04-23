@@ -441,14 +441,33 @@ body {
 }
 
 .project-card-text {
-    max-width: 95%;
     width: 100%;
+    height: 25%;
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    bottom: 0;
+    left: 0;
     opacity: 0.7;
     transition: opacity 0.35s;
     color: #fff;
+}
+
+.project-card-text::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.project-card-text-inner {
+    max-width: 95%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
 
 .project-name {
@@ -494,6 +513,10 @@ body {
 }
 
 .portfolio-content-list li:hover > .project-card > .project-card-text {
+    opacity: 0.9;
+}
+
+.portfolio-content-list li:hover > .project-card > .project-card-text::before {
     opacity: 1;
 }
 
