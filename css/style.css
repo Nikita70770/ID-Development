@@ -446,17 +446,20 @@ body {
     position: absolute;
     left: 20px;
     bottom: 20px;
-    color: #af133d;
+    opacity: 0.7;
+    transition: opacity 0.35s;
+    color: #fff;
 }
 
 .project-name {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Semibold';
     font-size: calc((100vw - 20rem) / (120 - 20) * (2.5 - 0.875) + 0.875rem);
 }
 
 .project-desc {
     transform: translateX(5%);
     margin-top: 5px;
+    font-family: 'Gilroy-Regular';
     font-size: calc((100vw - 20rem) / (120 - 20) * (1.5 - 0.375) + 0.375rem);
     font-weight: 600;
     opacity: 0;
@@ -488,6 +491,10 @@ body {
 
 .portfolio-content-list li:hover > .project-card > .project-card-image img {
     transform: scale(1.1);
+}
+
+.portfolio-content-list li:hover > .project-card > .project-card-text {
+    opacity: 1;
 }
 
 .portfolio-content-list li:hover > .project-card > .project-card-text .project-desc {
