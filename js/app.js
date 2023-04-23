@@ -33,13 +33,12 @@ function getProjects(type){
 }
 
 function showProjects(arr){
-    let lenArr = arr.length;
-    let countRows = Math.ceil(lenArr);
+    let countRows = Math.ceil(arr.length);
 
     portfolioList.innerHTML = "";
     portfolioList.style.gridTemplateRows = `"repeat(${countRows}, 1fr)"`;
 
-    arr.forEach((project) => {
+    arr.forEach(function(project, index){
         portfolioList.innerHTML += 
         `<li>
             <article class="project-card" data-tags="all, ${project.type}">
@@ -52,12 +51,10 @@ function showProjects(arr){
                 </div>
             </article>
         </li>`;
-    });
 
-    setTimeout(()=>{
-        let portfolioListItems = document.querySelectorAll("li");
-        portfolioListItems.forEach((item) => {
-            item.classList.add("active");
-        });
-    }, 50)
+        setTimeout(() => {
+            let portfolioListItem = portfolioList.querySelector(`li:nth-child(${index+1})`);
+            portfolioListItem.classList.add("active");
+        }, 100);
+    });
 }
