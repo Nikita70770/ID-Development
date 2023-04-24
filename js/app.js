@@ -46,10 +46,8 @@ function showProjects(arr){
                     <img src="${project.imageProject}" alt="Project Image"/>
                 </div>
                 <div class="project-card-text">
-                    <div class="project-card-text-inner">
-                        <h3 class="project-name">${project.name}</h3>
-                        <p class="project-desc">${project.desc}</p>
-                    </div>
+                    <h3 class="project-name">${project.name}</h3>
+                    <p class="project-desc">${project.desc}</p>
                 </div>
             </article>
         </li>`;
