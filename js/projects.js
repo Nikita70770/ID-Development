@@ -1,70 +1,121 @@
 let portfolio = [
     {
-        name: "Project#1",
+        name: "ProjectName",
         type: "web-projects",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/web-projects/project_web_(1).jpg"
     },
     {
-        name: "Project#2",
+        name: "ProjectName",
         type: "applications",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/applications/project_app_(1).jpg"
     },
     {
-        name: "Project#3",
+        name: "ProjectName",
         type: "web-projects",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main", "culture-and-tourism"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/web-projects/project_web_(2).jpg"
     },
     {
-        name: "Project#4",
+        name: "ProjectName",
         type: "applications",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/applications/project_app_(2).jpg"
     },
     {
-        name: "Project#5",
+        name: "ProjectName",
         type: "web-projects",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main", "other"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/web-projects/project_web_(3).jpg"
     },
     {
-        name: "Project#6",
+        name: "ProjectName",
         type: "applications",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main", "medicine"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/applications/project_app_(3).jpg"
     },
     {
-        name: "Project#7",
+        name: "ProjectName",
         type: "web-projects",
-        fieldOfActivity: "",
+        fieldOfActivities: ["medicine"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/web-projects/project_web_(4).jpg"
     },
     {
-        name: "Project#8",
+        name: "ProjectName",
         type: "applications",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main", "marketplaces"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/applications/project_app_(4).jpg"
     },
     {
-        name: "Project#9",
+        name: "ProjectName",
+        type: "web-projects",
+        fieldOfActivities: ["main", "banks"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/web-projects/project_web_(5).jpg"
+    },
+    {
+        name: "ProjectName",
         type: "applications",
-        fieldOfActivity: "",
+        fieldOfActivities: ["main", "sport"],
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         imageProject: "img/projects/applications/project_app_(5).jpg"
+    },
+    {
+        name: "ProjectName",
+        type: "web-projects",
+        fieldOfActivities: ["main", "banks"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/web-projects/project_web_(6).jpg"
+    },
+    {
+        name: "ProjectName",
+        type: "applications",
+        fieldOfActivities: ["banks"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/applications/project_app_(6).jpg"
+    },
+    {
+        name: "ProjectName",
+        type: "web-projects",
+        fieldOfActivities: ["main", "culture-and-tourism"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/web-projects/project_web_(7).jpg"
+    },
+    {
+        name: "ProjectName",
+        type: "applications",
+        fieldOfActivities: ["culture-and-tourism"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/applications/project_app_(7).jpg"
+    },
+    {
+        name: "ProjectName",
+        type: "web-projects",
+        fieldOfActivities: ["main", "marketplaces"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/web-projects/project_web_(8).jpg"
+    },
+    {
+        name: "ProjectName",
+        type: "applications",
+        fieldOfActivities: ["marketplaces"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/applications/project_app_(8).jpg"
+    },
+    {
+        name: "ProjectName",
+        type: "web-projects",
+        fieldOfActivities: ["main", "sport"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        imageProject: "img/projects/web-projects/project_web_(9).jpg"
     }
 ];
-
-const infoProject = {
-    types: ["web-projects", "applications"],
-    fieldsOfActivity: [""]
-};

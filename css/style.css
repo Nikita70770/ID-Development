@@ -395,11 +395,13 @@ body {
 .portfolio-sidebar-filters {
     max-width: 20%;
     width: 100%;
+    padding-top: 0.5vw;
 }
 
-.portfolio-sidebar-menu {
+.filter-btn-sidebar {
     font-size: calc((100vw - 20rem) / (120 - 20) * (1.375 - 0.5) + 0.5rem);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .portfolio-sidebar-menu > * {

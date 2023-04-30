@@ -1,32 +1,47 @@
 const filters = document.querySelectorAll(".filter-btn");
+const filtersSidebar = document.querySelectorAll(".filter-btn-sidebar");
 const portfolioList = document.querySelector(".portfolio-content-list");
 
 let projects = [];
+let arrFilters = [
+    filters[0].getAttribute("id"),
+    filtersSidebar[0].getAttribute("id")
+];
 
-showProjects(portfolio);
+showProjects(getProjects());
 
 filters.forEach((filterBtn) => {
     filterBtn.addEventListener("click", ()=>{
-        let type = filterBtn.getAttribute("id");
+        arrFilters[0] = filterBtn.getAttribute("id");
 
         filters.forEach((filter) => {
             filter.classList.remove("active");
         });
         filterBtn.classList.add("active");
-
-        showProjects(getProjects(type));
+    
+        showProjects(getProjects());
     });
 });
 
-function getProjects(type){
+filtersSidebar.forEach((filterBtn) => {
+    filterBtn.addEventListener("click", () => {
+        arrFilters[1] = filterBtn.getAttribute("id");
+        showProjects(getProjects());
+    });
+});
+
+function getProjects(){
     if(projects.length != 0) { projects = []; }
 
-    if(type === "all") { return portfolio; }
-    else{
+    if(arrFilters.length != 0){
         portfolio.forEach((project) => {
-            if(project.type === type){
-                projects.push(project);
-            }       
+            if(arrFilters[0] === "all"){
+                if(project.fieldOfActivities.includes(arrFilters[1]))
+                { projects.push(project); }
+            }
+            else if(project.type === arrFilters[0] &&
+                    project.fieldOfActivities.includes(arrFilters[1]))
+                { projects.push(project); }
         });
     }
     return projects;
@@ -41,7 +56,7 @@ function showProjects(arr){
     arr.forEach(function(project, index){
         portfolioList.innerHTML += 
         `<li>
-            <article class="project-card" data-tags="all, ${project.type}">
+            <article class="project-card">
                 <div class="project-card-image">
                     <img src="${project.imageProject}" alt="Project Image"/>
                 </div>

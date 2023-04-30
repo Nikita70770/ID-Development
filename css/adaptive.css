@@ -264,7 +264,10 @@
     .portfolio-sidebar-filters,
     .portfolio-content-inner {
         max-width: 100%;
-        width: 100%;
+    }
+
+    .portfolio-sidebar-filters {
+        padding-top: 0;
     }
 
     .portfolio-sidebar-menu {
