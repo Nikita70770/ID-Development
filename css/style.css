@@ -409,7 +409,7 @@ body {
     cursor: pointer;
 }
 
-.portfolio-sidebar-menu > * {
+.sidebar-filters-item {
     margin-bottom: calc(20px + 1.5625vw);
 }
 

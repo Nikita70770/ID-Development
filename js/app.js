@@ -1,12 +1,26 @@
 const filters = document.querySelectorAll(".filter-btn");
 const filtersSidebar = document.querySelectorAll(".filter-btn-sidebar");
 const portfolioList = document.querySelector(".portfolio-content-list");
+const filterIcon = document.getElementById("filter-icon");
+const sidebarFilters = document.querySelector(".portfolio-sidebar-filters");
 
 let projects;
 let arrFilters;
 
 initData();
 showProjects(getProjects());
+
+document.addEventListener("click", e=>{
+    if(e.target.id !== "sidebar-filters" &&
+        e.target.id !== "filter-icon")
+    { sidebarFilters.classList.remove("active"); } 
+
+    e.stopPropagation();
+});
+
+filterIcon.addEventListener("click", () => {
+    sidebarFilters.classList.toggle("active");
+});
 
 filters.forEach((filterBtn) => {
     filterBtn.addEventListener("click", ()=>{
