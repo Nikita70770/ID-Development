@@ -79,4 +79,6 @@
         #010101,
         #000000
     );
+    --filter-btn-top-indentation_1: calc(((100vw - 20rem) / (120 - 20) * (2.5 - 1.125) + 1.125rem) + 1.5625vw);
+    --filter-btn-top-indentation_2: calc(((100vw - 20rem) / (120 - 20) * (1.875 - 1.375) + 1.375rem) + 2vw);
 }
