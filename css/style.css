@@ -64,13 +64,16 @@ body {
     color: #f4f4f4;
 }
 
+.nav-list li {
+    transition: color 300ms;
+}
+
 .nav-list li:not(:last-child) {
     margin-right: 80px;
 }
 
 .nav-list li:hover {
     color: #be264c;
-    transition: color 300ms;
 }
 
 .checkbox-nav-menu,
@@ -84,9 +87,7 @@ body {
 
 .home {
     position: relative;
-    /* min-height: 100vh; */
-    min-height: 605px; /*????????????????*/
-    /* min-height: 995px; */
+    min-height: 605px;
 }
 
 .home-content {
@@ -115,7 +116,6 @@ body {
 }
 
 .home-list {
-    /* margin-top: 95px; */
     margin-top: 50px;
     display: flex;
 }
@@ -132,7 +132,6 @@ body {
 .btn-leave-request {
     display: block;
     max-width: 29%;
-    /* width: 335px; */
     margin-top: 90px;
     padding: 15px 0 15px 0;
     border-radius: 5px;
@@ -541,4 +540,54 @@ body {
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+}
+
+.portfolio-content-footer {
+    max-width: 50%;
+    width: 100%;
+}
+
+.portfolio-content-footer,
+.button-more-projects,
+.portfolio-progress {
+    margin: 0 auto;
+}
+
+.button-more-projects {
+    max-width: 50%;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #af133d;
+}
+
+.portfolio-progress {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: calc(10px + 1.5625vw);
+    align-items: center;
+}
+
+.portfolio-progress-inner {
+    max-width: 30%;
+    width: 100%;
+    border-radius: 14px;
+    background-color: #1e1f21;
+}
+
+.portfolio-progress-bar {
+    width: 80%;
+    height: 1vh;
+    border: 0;
+    border-radius: 8px;
+    background-color: #af133d;
+    transition: width 0.3s ease;
+}
+
+.portfolio-progress-text {
 }

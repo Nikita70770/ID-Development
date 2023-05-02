@@ -3,8 +3,10 @@ const portfolioList = document.querySelector(".portfolio-content-list");
 const filterIcon = document.querySelector("#filter-icon");
 const sidebarFilters = document.querySelector(".portfolio-sidebar-filters");
 const sidebarListElements = document.querySelectorAll(".sidebar-filters-item");
+const projectTotal = document.querySelector(".project-total");
 
 let projects;
+let projectsLimit;
 let arrFilters;
 
 initData();
@@ -83,6 +85,7 @@ function getProjects(){
                 { projects.push(project); }
         });
     }
+    projectsLimit = projects.length;
     return projects;
 }
 
@@ -111,4 +114,6 @@ function showProjects(arr){
             portfolioListItem.classList.add("active");
         }, 100);
     });
+
+    projectTotal.innerHTML = projectsLimit;
 }
