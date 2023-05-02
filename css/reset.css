@@ -1,13 +1,13 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header,
@@ -16,7 +16,7 @@ main,
 aside,
 section,
 footer {
-  display: block;
+    display: block;
 }
 
 h1,
@@ -26,32 +26,32 @@ h4,
 h5,
 h6,
 p {
-  font-size: inherit;
-  font-weight: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
 a,
 a:link,
 a:hover,
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
 input,
 textarea,
 button,
 select {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
 }

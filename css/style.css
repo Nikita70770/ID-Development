@@ -403,12 +403,6 @@ body {
     padding-top: 0.5vw;
 }
 
-.filter-btn-sidebar {
-    font-size: calc((100vw - 20rem) / (120 - 20) * (1.375 - 0.5) + 0.5rem);
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
 .sidebar-filters-item {
     margin-bottom: calc(20px + 1.5625vw);
 }
@@ -416,9 +410,12 @@ body {
 .filter-btn-sidebar {
     padding: 5px 0 10px 0;
     transition: padding-left 0.4s ease-out;
+    font-size: calc((100vw - 20rem) / (120 - 20) * (1.375 - 0.5) + 0.5rem);
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.filter-btn-sidebar.active {
+.sidebar-filters-item.active .filter-btn-sidebar {
     padding-left: 15px;
     border-left: 2px solid #af133d;
 }

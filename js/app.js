@@ -1,8 +1,8 @@
 const filters = document.querySelectorAll(".filter-btn");
-const filtersSidebar = document.querySelectorAll(".filter-btn-sidebar");
 const portfolioList = document.querySelector(".portfolio-content-list");
-const filterIcon = document.getElementById("filter-icon");
+const filterIcon = document.querySelector("#filter-icon");
 const sidebarFilters = document.querySelector(".portfolio-sidebar-filters");
+const sidebarListElements = document.querySelectorAll(".sidebar-filters-item");
 
 let projects;
 let arrFilters;
@@ -47,14 +47,15 @@ filters.forEach((filterBtn) => {
     });
 });
 
-filtersSidebar.forEach((filterBtn) => {
-    filterBtn.addEventListener("click", () => {
-        arrFilters[1] = filterBtn.getAttribute("id");
+sidebarListElements.forEach((elementList) => {
+    let btnSidebar = elementList.querySelector(".filter-btn-sidebar"); 
+    btnSidebar.addEventListener("click", () => {
+        arrFilters[1] = btnSidebar.getAttribute("id");
 
-        filtersSidebar.forEach((filter) => {
-            filter.classList.remove("active");
+        sidebarListElements.forEach((element) => {
+            element.classList.remove("active");
         });
-        filterBtn.classList.add("active");
+        elementList.classList.add("active");
         
         showProjects(getProjects());
     });
@@ -64,7 +65,7 @@ function initData(){
     projects = [];
     arrFilters = [
         filters[0].getAttribute("id"),
-        filtersSidebar[0].getAttribute("id")
+        sidebarListElements[0].querySelector(".filter-btn-sidebar").getAttribute("id")
     ];
 }
 

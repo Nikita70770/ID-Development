@@ -303,12 +303,11 @@
 
     .portfolio-sidebar-filters.active {
         display: block;
-        animation: fade-in-from-none 0.5s ease-in-out;
-        animation-fill-mode: forwards;
+        animation: fade-in-from-none 0.5s ease;
     }
 
     .portfolio-sidebar-filters.hide {
-        animation: fade-out-from-visibility 0.5s ease-in-out;
+        animation: fade-out-from-visibility 0.5s ease;
     }
 
     .portfolio-sidebar-menu {
@@ -328,13 +327,18 @@
         background-color: #1e1f21;
     }
 
+    .sidebar-filters-item.active {
+        background-color: #86062d;
+    }
+
     .filter-btn-sidebar {
+        width: 100%;
         display: block;
         margin: 0 auto;
         padding: 0;
     }
 
-    .filter-btn-sidebar.active {
+    .sidebar-filters-item.active .filter-btn-sidebar {
         padding-left: 0;
         border-left: none;
     }
