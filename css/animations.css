@@ -3,3 +3,21 @@
         width: 100%;
     }
 }
+
+@keyframes fade-in-from-none {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-from-visibility {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

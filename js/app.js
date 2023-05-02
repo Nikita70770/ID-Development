@@ -10,16 +10,28 @@ let arrFilters;
 initData();
 showProjects(getProjects());
 
-document.addEventListener("click", e=>{
+document.addEventListener("click", e => {
     if(e.target.id !== "sidebar-filters" &&
-        e.target.id !== "filter-icon")
-    { sidebarFilters.classList.remove("active"); } 
+        e.target.id !== "filter-icon"){ 
+        sidebarFilters.classList.add("hide");
+        setTimeout(() => {
+            sidebarFilters.classList.remove("active");
+        }, 500);
+    } 
 
     e.stopPropagation();
 });
 
 filterIcon.addEventListener("click", () => {
-    sidebarFilters.classList.toggle("active");
+    if(!sidebarFilters.classList.contains("active")){
+        sidebarFilters.classList.add("active");
+        sidebarFilters.classList.remove("hide");
+    }else{
+        sidebarFilters.classList.add("hide");
+        setTimeout(() => {
+            sidebarFilters.classList.remove("active");
+        }, 500);
+    }
 });
 
 filters.forEach((filterBtn) => {
