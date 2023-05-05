@@ -439,6 +439,10 @@
     .portfolio-content-list li::after {
         height: 1.5px;
     }
+
+    .portfolio-content-footer {
+        max-width: 60%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -510,5 +514,9 @@
 
     .project-card-text-inner {
         max-width: 100%;
+    }
+
+    .portfolio-progress {
+        column-gap: calc(25px + 1.5625vw);
     }
 }

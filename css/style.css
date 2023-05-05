@@ -322,6 +322,10 @@ body {
 
 /* Portfolio */
 
+.portfolio-main {
+    margin-bottom: calc(170px + 1.5625vw);
+}
+
 .portfolio-header-menu {
     margin: calc(200px + 1.5625vw) 0 calc(50px + 1.5625vw) 0;
 }
@@ -545,28 +549,40 @@ body {
 .portfolio-content-footer {
     max-width: 50%;
     width: 100%;
+    margin: calc(40px + 1.5625vw) auto 0;
 }
 
-.portfolio-content-footer,
 .button-more-projects,
 .portfolio-progress {
     margin: 0 auto;
 }
 
+.projects-progress-info {
+    font-size: calc((100vw - 20rem) / (120 - 20) * (1.375 - 0.625) + 0.625rem);
+}
+
 .button-more-projects {
-    max-width: 50%;
+    max-width: 55%;
+    min-width: 150px;
     width: 100%;
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     padding: 10px;
+    border-radius: 5px;
+    font-size: calc((100vw - 20rem) / (120 - 20) * (1.75 - 0.875) + 0.875rem);
     text-align: center;
     cursor: pointer;
+    transition: all 250ms ease-in-out;
     background-color: #af133d;
 }
 
+.button-more-projects:hover {
+    border-color: #315da2;
+    background-color: #000;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
 .portfolio-progress {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     column-gap: calc(10px + 1.5625vw);
@@ -574,7 +590,7 @@ body {
 }
 
 .portfolio-progress-inner {
-    max-width: 30%;
+    max-width: 40%;
     width: 100%;
     border-radius: 14px;
     background-color: #1e1f21;
@@ -587,7 +603,4 @@ body {
     border-radius: 8px;
     background-color: #af133d;
     transition: width 0.3s ease;
-}
-
-.portfolio-progress-text {
 }
