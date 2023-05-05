@@ -581,7 +581,7 @@ body {
 }
 
 .portfolio-progress-bar {
-    width: 80%;
+    width: 0;
     height: 1vh;
     border: 0;
     border-radius: 8px;
