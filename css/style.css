@@ -604,3 +604,73 @@ body {
     background-color: #af133d;
     transition: width 0.3s ease;
 }
+
+/* Our Team */
+
+.our-team {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1f21;
+}
+
+.our-team-images {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.our-team-images img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.our-team-content {
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.our-team-content-left,
+.our-team-content-right {
+    width: 100%;
+    height: 100%;
+}
+
+.our-team-content-left {
+    max-width: 45%;
+}
+
+.our-team-title {
+}
+
+.our-team-subtitle {
+}
+
+.our-team-content-right {
+    max-width: 55%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.block-radio-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.radio-btn {
+    border: 0px;
+    width: 50%;
+    height: 2vw;
+}
