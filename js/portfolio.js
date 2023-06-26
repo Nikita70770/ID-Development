@@ -1,3 +1,5 @@
+import portfolio from './data/projects.js';
+
 const filters = document.querySelectorAll(".filter-btn");
 const filterIcon = document.querySelector("#filter-icon");
 const sidebarFilters = document.querySelector(".portfolio-sidebar-filters");
@@ -114,7 +116,6 @@ function initData(){
         sidebarListElements[0].querySelector(".filter-btn-sidebar").getAttribute("id")
     ];
     projectIncrease = 6;
-    countClick = 0;
     currentPage = 1;
 
     getProjects();

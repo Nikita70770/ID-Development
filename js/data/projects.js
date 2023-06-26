@@ -119,3 +119,5 @@ let portfolio = [
         imageProject: "img/projects/web-projects/project_web_(9).jpg"
     }
 ];
+
+export default portfolio;
