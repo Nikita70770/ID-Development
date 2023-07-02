@@ -1,4 +1,4 @@
-let ourTeamData = [
+export let ourTeam = [
     {
         title: "Lorem ipsum dolor sit amet.",
         contentDesc: "orem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti in ratione voluptatum ea optio inventore reprehenderit eligendi, laboriosam numquam itaque dolorem aspernatur ab illum est blanditiis dolor debitis facere.",

@@ -615,11 +615,11 @@ body {
     background-color: #1e1f21;
 }
 
-/* .our-team-images {
-    max-width: 100%;
+.our-team-images {
     width: 100%;
     height: 100%;
-} */
+    position: relative;
+}
 
 .our-team-image {
     width: 100%;
@@ -627,6 +627,14 @@ body {
     display: block;
     object-fit: cover;
     object-position: center;
+    position: absolute;
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.our-team-image.one.hide,
+.our-team-image.two.hide {
+    opacity: 0;
 }
 
 .our-team-content {
