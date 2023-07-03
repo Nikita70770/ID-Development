@@ -2,7 +2,7 @@ export let ourTeam = [
     {
         title: "Lorem ipsum dolor sit amet.",
         contentDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti in ratione voluptatum ea optio inventore reprehenderit eligendi, laboriosam numquam itaque dolorem aspernatur ab illum est blanditiis dolor debitis facere.",
-        image: "img/our_team/group-people-1.jpg"
+        image: "img/our_team/group-people-6.jpg"
     },
     {
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
