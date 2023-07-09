@@ -640,28 +640,15 @@ body {
 .our-team-content {
     width: 100%;
     height: 100%;
-    display: flex;
     position: relative;
     top: 0;
     left: 0;
 }
 
-.our-team-content-left,
-.our-team-content-right {
-    max-width: 50%;
+.our-team-content-left {
+    max-width: 45vw;
     width: 100%;
-    height: 100%;
-}
-
-/* .our-team-content-left {
-    max-width: 45%;
-} */
-
-.our-team-content-left-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: calc(50px + 1.5625vw) 0 0 calc(50px + 1.5625vw);
+    padding: calc(55px + 1.5625vw) 0 0 calc(55px + 1.5625vw);
 }
 
 .our-team-title {
@@ -669,7 +656,7 @@ body {
     opacity: 0;
     font-family: 'Gilroy-Black';
     font-size: calc((100vw - 20rem) / (120 - 20) * (4.5 - 1.25) + 1.25rem);
-    transition: all 1s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .our-team-title.move-right {
@@ -684,9 +671,9 @@ body {
 
 .our-team-subtitle {
     position: absolute;
-    left: calc(160px + 1.5625vw);
-    bottom: calc(60px + 1.5625vw);
-    /* margin: 600px 0 0 100px; */
+    left: calc(120px + 1.5625vw);
+    /* bottom: calc(100px + 1.5625vw); */
+    bottom: 12%;
     /* font-size: calc((100vw - 20rem) / (120 - 20) * (1.875 - 0.75) + 0.75rem); */
     /* font-size: 40px; */
     font-family: 'Gilroy-Semibold';
@@ -695,31 +682,27 @@ body {
 }
 
 .our-team-subtitle-span {
-    color: #be264c;
+    color: #d5073a;
 }
 
 .our-team-content-right {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.our-team-content-right-inner {
+    max-width: 55vw;
     width: 100%;
+    padding-left: calc(20px + 1.5625vw);
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     opacity: 1;
-    transition: all 1s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
-.our-team-content-right-inner.move-up {
+.our-team-content-right.move-up {
     opacity: 1;
     top: 50%;
 }
 
-.our-team-content-right-inner.move-down {
+.our-team-content-right.move-down {
     opacity: 0;
     top: 65%;
 }
@@ -731,14 +714,24 @@ body {
     transition: all 1s ease;
 }
 
-/* .block-radio-buttons {
+.block-radio-buttons {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: calc(20px + 1.5625vw);
+    right: calc(20px + 1.5625vw);
+}
+
+.block-radio-buttons > *:not(:first-child) {
+    margin-top: calc(5px + 1.5625vw);
 }
 
 .radio-btn {
-    border: 0px;
-    width: 50%;
-    height: 2vw;
-} */
+    width: 3vw;
+    height: 3vw;
+    background-color: #fff;
+}
+
+.radio-btn.active {
+    background-color: #af133d;
+}
