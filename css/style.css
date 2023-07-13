@@ -729,9 +729,28 @@ body {
 .radio-btn {
     width: 3vw;
     height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.radio-btn-inner {
+    width: 2vw;
+    height: 2vw;
+    background-color: #af133d;
+    transition: margin-top 0.45s ease-in-out;
+}
+
+.radio-btn-inner.hide {
     background-color: #fff;
 }
 
-.radio-btn.active {
-    background-color: #af133d;
+.radio-btn-inner.animate-transition1 {
+    margin-top: calc(-90px - 1.5625vw);
+}
+
+.radio-btn-inner.animate-transition2 {
+    margin-top: calc(90px + 1.5625vw);
 }

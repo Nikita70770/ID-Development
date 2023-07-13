@@ -5,7 +5,8 @@ const ourTeamImgTwo = document.querySelector('.our-team-image.two');
 const ourTeamTitle = document.querySelector('.our-team-title');
 const ourTeamContentRight = document.querySelector('.our-team-content-right');
 const ourTeamContentDesc = document.querySelector('.our-team-content-desc');
-const radioBtns = document.querySelector(".block-radio-buttons").getElementsByTagName("*");
+const radioBtnInner = document.querySelectorAll(".radio-btn-inner");
+
 
 let currSlide = 0;
 let counter = 0;
@@ -29,22 +30,20 @@ function nextSlide(){
     }
 
     setTextContentSlide();
-    enableAnimation();
 
+    enableTextAnim();
+    enableRadioBtnsAnim();
+    
     currSlide = (currSlide + 1) % sizeArr;
     counter++;
 }
 
-function enableAnimation(){
+function enableTextAnim(){
     ourTeamTitle.classList.remove("move-left");
     ourTeamTitle.classList.add("move-right");
 
     ourTeamContentRight.classList.remove("move-down");
     ourTeamContentRight.classList.add("move-up");   
-
-    if(currSlide > 0) radioBtns[currSlide - 1].classList.remove("active");
-    if(currSlide == 0) radioBtns[sizeArr - 1].classList.remove("active");
-    radioBtns[currSlide].classList.add("active");
 
     setTimeout(() => {
         ourTeamTitle.classList.remove("move-right");
@@ -52,6 +51,32 @@ function enableAnimation(){
 
         ourTeamContentRight.classList.remove("move-up");
         ourTeamContentRight.classList.add("move-down");
+    }, 4000);
+}
+
+function enableRadioBtnsAnim(){
+    radioBtnInner[currSlide].classList.remove("animate-transition1");
+    setTimeout(() => {
+        if(currSlide == 0){ 
+            radioBtnInner[sizeArr - 1].classList.add("animate-transition2");
+            setTimeout(() => {
+                radioBtnInner.forEach((item) => {
+                    item.classList.add("hide");
+                    item.classList.add("animate-transition1");
+                    item.classList.remove("animate-transition2");
+                });
+            }, 500)
+            
+            setTimeout(() => {
+                radioBtnInner.forEach((item) => {
+                    item.classList.remove("hide");
+                });
+            }, 1000)
+        }
+        if(currSlide > 0){
+            radioBtnInner[currSlide - 1].classList.add("animate-transition2");
+            radioBtnInner[currSlide - 1].classList.remove("animate-transition1");
+        }
     }, 4000);
 }
 
