@@ -3,10 +3,9 @@ import { ourTeam } from './data/our_team.js';
 const ourTeamImgOne = document.querySelector('.our-team-image.one');
 const ourTeamImgTwo = document.querySelector('.our-team-image.two');
 const ourTeamTitle = document.querySelector('.our-team-title');
-const ourTeamContentRight = document.querySelector('.our-team-content-right');
 const ourTeamContentDesc = document.querySelector('.our-team-content-desc');
 const radioBtnInner = document.querySelectorAll(".radio-btn-inner");
-
+ourTeamContentDesc
 
 let currSlide = 0;
 let counter = 0;
@@ -42,15 +41,13 @@ function enableTextAnim(){
     ourTeamTitle.classList.remove("move-left");
     ourTeamTitle.classList.add("move-right");
 
-    ourTeamContentRight.classList.remove("move-down");
-    ourTeamContentRight.classList.add("move-up");   
+    ourTeamContentDesc.classList.remove("move-down");
 
     setTimeout(() => {
         ourTeamTitle.classList.remove("move-right");
         ourTeamTitle.classList.add("move-left");
 
-        ourTeamContentRight.classList.remove("move-up");
-        ourTeamContentRight.classList.add("move-down");
+        ourTeamContentDesc.classList.add("move-down");
     }, 4000);
 }
 
