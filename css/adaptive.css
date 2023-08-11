@@ -193,6 +193,23 @@
     }
 }
 
+@media (max-width: 960px) {
+    /* Request Form */
+
+    .request-form-inner {
+        flex-direction: column;
+    }
+
+    .request-form-left,
+    .request-form-right {
+        max-width: 100%;
+    }
+
+    .request-form-right-inner {
+        max-width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     /* Home Content */
 
@@ -499,6 +516,39 @@
         width: 2.5vw;
         height: 2.5vw;
     }
+
+    /* Request Form */
+
+    #inpt-name,
+    #inpt-phone-number,
+    #inpt-email {
+        max-width: 100%;
+        /* width: 100%; */
+    }
+
+    #inpt-phone-number,
+    #inpt-email,
+    #textarea-desc-task {
+        margin-top: calc(10px + 1.5625vw);
+    }
+
+    .request-form-bottom-link p {
+        margin-left: calc(10px + 1.5625vw);
+    }
+
+    .send-request-block {
+        /* margin-top: 90px; */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-send-request {
+        max-width: 50%;
+    }
+
+    .text-send-request {
+        margin-top: calc(10px + 1.5625vw);
+    }
 }
 
 @media (max-width: 320px) {
@@ -586,5 +636,54 @@
     .radio-btn-inner {
         width: 3.5vw;
         height: 3.5vw;
+    }
+
+    /* Request Form */
+
+    .request-form-radio-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .request-form-radio-btn:nth-child(2) {
+        border-right: 1px solid #be264c;
+    }
+
+    .request-form-radio-btn:nth-child(1),
+    .request-form-radio-btn:nth-child(2) {
+        border-bottom: 0;
+    }
+
+    .request-form-radio-btn:nth-child(3),
+    .request-form-radio-btn:nth-child(4) {
+        border-top: 0;
+    }
+
+    .request-form-bottom-inner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .request-form-bottom-left,
+    .request-form-bottom-right {
+        max-width: 100%;
+    }
+
+    .request-form-bottom-right {
+        max-width: 80%;
+        margin: calc(10px + 1.5625vw) 0 0 10px;
+    }
+
+    .request-form-bottom-right > ol {
+        margin-left: 0;
+    }
+
+    .send-request-block {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .btn-send-request {
+        max-width: 75%;
     }
 }
