@@ -479,6 +479,7 @@
         height: 500px;
         display: flex;
         justify-content: center;
+        background-color: #000;
     }
 
     .our-team-content-inner {
