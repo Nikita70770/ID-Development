@@ -813,6 +813,7 @@ body {
 
 .request-form-left-title {
     /* font-size: 46px; */
+    font-family: 'Gilroy-Medium';
     font-size: calc((100vw - 20rem) / (120 - 20) * (2.875 - 1) + 1rem);
 }
 
@@ -826,8 +827,8 @@ body {
 
 .social-network-list li a {
     display: block;
-    width: calc((100vw - 20rem) / (120 - 20) * (6.25 - 4.375) + 4.375rem);
-    height: calc((100vw - 20rem) / (120 - 20) * (6.25 - 4.375) + 4.375rem);
+    width: calc((100vw - 20rem) / (120 - 20) * (6.25 - 3.75) + 3.75rem);
+    height: calc((100vw - 20rem) / (120 - 20) * (6.25 - 3.75) + 3.75rem);
     position: relative;
     text-align: center;
     transition: 0.5s;
@@ -1158,7 +1159,6 @@ body {
 }
 
 .paperclip-icon {
-    max-width: 15%;
     width: 100%;
     vertical-align: middle;
     transform: rotate(45deg);
@@ -1174,7 +1174,6 @@ body {
     margin-left: 40px;
     list-style: decimal;
     /* font-size: 14px; */
-    /* font-size: calc((100vw - 20rem) / (120 - 20) * (1.125 - 0.5) + 0.5rem); */
     font-size: calc((100vw - 20rem) / (120 - 20) * (0.875 - 0.375) + 0.375rem);
 }
 
