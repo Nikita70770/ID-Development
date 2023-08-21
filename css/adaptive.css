@@ -205,6 +205,34 @@
         max-width: 100%;
     }
 
+    .request-form-left {
+        height: 70vh;
+    }
+
+    .request-form-element-1 {
+        width: 123vw;
+        height: 35vw;
+        top: 0;
+        left: -21%;
+    }
+
+    .request-form-element-2 {
+        max-width: 60%;
+        top: 8%;
+        left: 10%;
+    }
+
+    .request-form-element-2-content {
+        max-width: 65%;
+        top: 6%;
+        left: 14%;
+    }
+
+    .request-form-left-title {
+        /* font-size: 38px; */
+        font-size: calc((100vw - 20rem) / (60 - 20) * (2.375 - 0.875) + 0.875rem);
+    }
+
     .request-form-right-inner {
         max-width: 90%;
     }
@@ -360,6 +388,23 @@
 
     .portfolio-content-list li::after {
         height: 2.5px;
+    }
+
+    /* Request Form */
+
+    .request-form-left {
+        height: 80vh;
+    }
+
+    .request-form-social-network {
+        bottom: 10%;
+        /* left: 5%; */
+    }
+}
+
+@media (max-width: 600px) {
+    .request-form-left {
+        height: 90vh;
     }
 }
 
@@ -520,6 +565,14 @@
 
     /* Request Form */
 
+    .request-form-element-2 {
+        top: 5%;
+    }
+
+    .request-form-social-network {
+        bottom: 18%;
+    }
+
     #inpt-name,
     #inpt-phone-number,
     #inpt-email {
@@ -640,6 +693,19 @@
     }
 
     /* Request Form */
+
+    .request-form-element-2 {
+        top: 6%;
+    }
+
+    .request-form-element-2-content {
+        top: 6%;
+        left: 10%;
+    }
+
+    .request-form-social-network {
+        bottom: 5%;
+    }
 
     .request-form-radio-buttons {
         grid-template-columns: repeat(2, 1fr);

@@ -608,7 +608,7 @@ body {
     height: 100vh;
     position: relative;
     display: flex;
-    background-color: #1e1f21;
+    background-color: #000;
 }
 
 .our-team-images {
@@ -804,11 +804,16 @@ body {
 }
 
 .request-form-element-2-content {
-    max-width: 80%;
+    max-width: 74%;
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10%;
+}
+
+.request-form-left-title {
+    /* font-size: 46px; */
+    font-size: calc((100vw - 20rem) / (120 - 20) * (2.875 - 1) + 1rem);
 }
 
 .request-form-social-network {
@@ -821,21 +826,22 @@ body {
 
 .social-network-list li a {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: calc((100vw - 20rem) / (120 - 20) * (6.25 - 4.375) + 4.375rem);
+    height: calc((100vw - 20rem) / (120 - 20) * (6.25 - 4.375) + 4.375rem);
     position: relative;
     text-align: center;
-    font-size: 20px;
-    line-height: 100px;
     transition: 0.5s;
 }
 
-.social-network {
-    vertical-align: middle;
+.social-network,
+.social-network-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.social-network-list li a span,
-.social-network-name {
+.social-network-list li a span {
     position: absolute;
     transition: transform 0.5s;
 }
@@ -849,7 +855,7 @@ body {
 
 .social-network-list li a span:nth-child(2),
 .social-network-list li a span:nth-child(4) {
-    width: 3px;
+    width: 3%;
     height: 100%;
 }
 
@@ -878,7 +884,7 @@ body {
 .social-network-list li a span:nth-child(1),
 .social-network-list li a span:nth-child(3) {
     width: 100%;
-    height: 3px;
+    height: 3%;
 }
 
 .social-network-list li a span:nth-child(1) {
@@ -928,40 +934,30 @@ body {
 }
 
 .social-network-name {
-    top: 0;
     visibility: hidden;
     opacity: 0;
+    /* font-size: 20px; */
+    transition: all 0.5s ease;
+    font-size: calc((100vw - 20rem) / (120 - 20) * (1.25 - 0.625) + 0.625rem);
 }
 
-.social-network-name.telegram {
-    left: 8%;
-}
-
-.social-network-name.vk {
-    left: 3%;
-}
-
-.social-network-list li:nth-child(1) a .social-network-name.telegram,
+.social-network-list li:nth-child(1) a .social-network-name,
 .social-network-list li:nth-child(1) a .social-network.telegram,
-.social-network-list li:nth-child(2) a .social-network-name.vk,
+.social-network-list li:nth-child(2) a .social-network-name,
 .social-network-list li:nth-child(2) a .social-network.vk {
     transition: all 0.5s ease;
 }
 
-.social-network-list li:nth-child(1) a:hover .social-network-name.telegram,
-.social-network-list li:nth-child(2) a:hover .social-network-name.vk {
-    top: 25%;
+.social-network-list li:nth-child(1) a:hover .social-network-name,
+.social-network-list li:nth-child(2) a:hover .social-network-name {
+    top: 75%;
     visibility: visible;
     opacity: 1;
 }
 
 .social-network-list li:nth-child(1) a:hover .social-network.telegram,
 .social-network-list li:nth-child(2) a:hover .social-network.vk {
-    margin-bottom: 25%;
-}
-
-.request-form-left-title {
-    font-size: 30px;
+    top: 40%;
 }
 
 .request-form-right-inner {
