@@ -1215,6 +1215,5 @@ body {
 }
 
 .text-send-request {
-    /* display: inline; */
     font-size: calc((100vw - 20rem) / (120 - 20) * (1.125 - 0.5) + 0.5rem);
 }

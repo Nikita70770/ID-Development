@@ -85,14 +85,6 @@
                     <canvas></canvas>
                     <canvas></canvas>
                     <canvas></canvas>
-                    <!-- <picture>
-                        <source srcset="img/home/home-background1366px.png" media="(max-width: 1500px)" />
-                        <source srcset="img/home/home-background1024px.png" media="(max-width: 1000px)" />
-                        <source srcset="img/home/home-background800px.png" media="(max-width: 768px)" />
-                        <source srcset="img/home/home-background480px.png" media="(max-width: 480px)" />
-                        <source srcset="img/home/home-background320px.png" media="(max-width: 320px)" />
-                        <img src="img/home/home-background.png" alt="Background Image" />
-                    </picture> -->
                 </div>
             </section>
             <section class="services">
@@ -299,175 +291,178 @@
                 </div>
             </section>
             <section class="request-form">
-                <div class="request-form-inner">
-                    <div class="request-form-left">
-                        <div class="request-form-elements">
-                            <div class="request-form-element-1"></div>
-                            <div class="request-form-element-2">
-                                <div class="request-form-element-2-content">
-                                    <h2 class="request-form-left-title">Оставьте заявку, чтобы обсудить проект</h2>
+                <div class="container">
+                    <div class="request-form-inner">
+                        <div class="request-form-left">
+                            <div class="request-form-elements">
+                                <div class="request-form-element-1"></div>
+                                <div class="request-form-element-2">
+                                    <div class="request-form-element-2-content">
+                                        <h2 class="request-form-left-title">Оставьте заявку, чтобы обсудить проект</h2>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 53 55">
+                                        <defs>
+                                            <mask id="mask">
+                                                <path d="M 0 5 L 53 -30 L 53 -10 L 0 25" fill="#fff" />
+                                            </mask>
+                                        </defs>
+                                        <image
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="img/request_form/bc-img.jpg"
+                                            preserveAspectRatio="xMidYMid slice"
+                                            width="100%"
+                                            height="100%"
+                                            x="0"
+                                            y="-30"
+                                            mask="url(#mask)"
+                                        />
+                                        <path d="M 0 5 L 53 -30 L 53 -10 L 0 25" opacity="0.5" fill="#be264c" />
+                                    </svg>
                                 </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 53 55">
-                                    <defs>
-                                        <mask id="mask">
-                                            <path d="M 0 5 L 53 -30 L 53 -10 L 0 25" fill="#fff" />
-                                        </mask>
-                                    </defs>
-                                    <image
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        xlink:href="img/request_form/bc-img.jpg"
-                                        preserveAspectRatio="xMidYMid slice"
-                                        width="100%"
-                                        height="100%"
-                                        x="0"
-                                        y="-30"
-                                        mask="url(#mask)"
-                                    />
-                                    <path d="M 0 5 L 53 -30 L 53 -10 L 0 25" opacity="0.5" fill="#be264c" />
-                                </svg>
+                            </div>
+                            <div class="request-form-social-network">
+                                <ul class="social-network-list">
+                                    <li>
+                                        <a href="#">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <svg
+                                                class="social-network telegram"
+                                                height="2.5em"
+                                                viewBox="0 0 48 48"
+                                                fill="#fff"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M40.83,8.48c1.14,0,2,1,1.54,2.86l-5.58,26.3c-.39,1.87-1.52,2.32-3.08,1.45L20.4,29.26a.4.4,0,0,1,0-.65L35.77,14.73c.7-.62-.15-.92-1.07-.36L15.41,26.54a.46.46,0,0,1-.4.05L6.82,24C5,23.47,5,22.22,7.23,21.33L40,8.69a2.16,2.16,0,0,1,.83-.21Z"
+                                                />
+                                            </svg>
+                                            <span class="social-network-name">Telegram</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <svg
+                                                class="social-network vk"
+                                                height="2.5em"
+                                                viewBox="0 0 24 24"
+                                                fill="#fff"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"
+                                                />
+                                            </svg>
+                                            <span class="social-network-name">Вконтакте</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="request-form-social-network">
-                            <ul class="social-network-list">
-                                <li>
-                                    <a href="#">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <svg
-                                            class="social-network telegram"
-                                            height="2.5em"
-                                            viewBox="0 0 48 48"
-                                            fill="#fff"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M40.83,8.48c1.14,0,2,1,1.54,2.86l-5.58,26.3c-.39,1.87-1.52,2.32-3.08,1.45L20.4,29.26a.4.4,0,0,1,0-.65L35.77,14.73c.7-.62-.15-.92-1.07-.36L15.41,26.54a.46.46,0,0,1-.4.05L6.82,24C5,23.47,5,22.22,7.23,21.33L40,8.69a2.16,2.16,0,0,1,.83-.21Z"
-                                            />
-                                        </svg>
-                                        <span class="social-network-name">Telegram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <svg
-                                            class="social-network vk"
-                                            height="2.5em"
-                                            viewBox="0 0 24 24"
-                                            fill="#fff"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"
-                                            />
-                                        </svg>
-                                        <span class="social-network-name">Вконтакте</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="request-form-right">
-                        <div class="request-form-right-inner">
-                            <form action="#">
-                                <div class="request-form-top">
-                                    <h2 class="request-form-top-title">Ваши контакты</h2>
-                                    <div class="request-form-top-fields">
-                                        <input id="inpt-name" type="text" placeholder="Имя" />
-                                        <input id="inpt-phone-number" type="text" placeholder="+7" />
-                                        <input id="inpt-email" type="text" placeholder="Почта" />
-                                    </div>
-                                </div>
-                                <div class="request-form-middle">
-                                    <h3 class="request-form-middle-title">О проекте</h3>
-                                    <div class="request-form-middle-inner">
-                                        <div class="request-form-radio-buttons">
-                                            <div class="request-form-radio-btn">
-                                                <input id="radio-btn-1" type="radio" name="action" />
-                                                <label for="radio-btn-1">
-                                                    <p>Web-сайт</p>
-                                                </label>
-                                            </div>
-                                            <div class="request-form-radio-btn">
-                                                <input id="radio-btn-2" type="radio" name="action" />
-                                                <label for="radio-btn-2"><p>Android</p></label>
-                                            </div>
-                                            <div class="request-form-radio-btn">
-                                                <input id="radio-btn-3" type="radio" name="action" />
-                                                <label for="radio-btn-3"><p>Продвижение</p></label>
-                                            </div>
-                                            <div class="request-form-radio-btn">
-                                                <input id="radio-btn-4" type="radio" name="action" />
-                                                <label for="radio-btn-4"><p>Брендинг</p></label>
-                                            </div>
-                                        </div>
-                                        <div class="request-form-middle-fields">
-                                            <textarea
-                                                name=""
-                                                id="textarea-desc-task"
-                                                cols="30"
-                                                rows="10"
-                                                placeholder="Опишите задачу"
-                                            ></textarea>
+                        <div class="request-form-right">
+                            <div class="request-form-right-inner">
+                                <form action="#">
+                                    <div class="request-form-top">
+                                        <h2 class="request-form-top-title">Ваши контакты</h2>
+                                        <div class="request-form-top-fields">
+                                            <input id="inpt-name" type="text" placeholder="Имя" />
+                                            <input id="inpt-phone-number" type="text" placeholder="+7" />
+                                            <input id="inpt-email" type="text" placeholder="Почта" />
                                         </div>
                                     </div>
-                                </div>
-                                <div class="request-form-bottom">
-                                    <div class="request-form-bottom-inner">
-                                        <div class="request-form-bottom-left">
-                                            <a class="request-form-bottom-link" href="#">
-                                                <picture>
-                                                    <source
-                                                        srcset="img/request_form/paperclip_icon-sz-18p.svg"
-                                                        media="(max-width: 320px)"
-                                                    />
-                                                    <source
-                                                        srcset="img/request_form/paperclip_icon-sz-22p.svg"
-                                                        media="(max-width: 480px)"
-                                                    />
-                                                    <source
-                                                        srcset="img/request_form/paperclip_icon-sz-26p.svg"
-                                                        media="(max-width: 960px)"
-                                                    />
-                                                    <img
-                                                        class="paperclip-icon"
-                                                        src="img/request_form/paperclip_icon-sz-32p.svg"
-                                                        alt="#"
-                                                    />
-                                                </picture>
-                                                <p>Прикрепить файл</p>
-                                            </a>
-                                        </div>
-                                        <div class="request-form-bottom-right">
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                                <li>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
-                                                    eligendi.
-                                                </li>
-                                                <li>
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa!
-                                                </li>
-                                                <li>
-                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
-                                                    iure tenetur?
-                                                </li>
-                                            </ol>
+                                    <div class="request-form-middle">
+                                        <h3 class="request-form-middle-title">О проекте</h3>
+                                        <div class="request-form-middle-inner">
+                                            <div class="request-form-radio-buttons">
+                                                <div class="request-form-radio-btn">
+                                                    <input id="radio-btn-1" type="radio" name="action" />
+                                                    <label for="radio-btn-1">
+                                                        <p>Web-сайт</p>
+                                                    </label>
+                                                </div>
+                                                <div class="request-form-radio-btn">
+                                                    <input id="radio-btn-2" type="radio" name="action" />
+                                                    <label for="radio-btn-2"><p>Android</p></label>
+                                                </div>
+                                                <div class="request-form-radio-btn">
+                                                    <input id="radio-btn-3" type="radio" name="action" />
+                                                    <label for="radio-btn-3"><p>Продвижение</p></label>
+                                                </div>
+                                                <div class="request-form-radio-btn">
+                                                    <input id="radio-btn-4" type="radio" name="action" />
+                                                    <label for="radio-btn-4"><p>Брендинг</p></label>
+                                                </div>
+                                            </div>
+                                            <div class="request-form-middle-fields">
+                                                <textarea
+                                                    name=""
+                                                    id="textarea-desc-task"
+                                                    cols="30"
+                                                    rows="10"
+                                                    placeholder="Опишите задачу"
+                                                ></textarea>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="send-request-block">
-                                        <input class="btn-send-request" type="submit" />
-                                        <p class="text-send-request">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, provident.
-                                        </p>
+                                    <div class="request-form-bottom">
+                                        <div class="request-form-bottom-inner">
+                                            <div class="request-form-bottom-left">
+                                                <a class="request-form-bottom-link" href="#">
+                                                    <picture>
+                                                        <source
+                                                            srcset="img/request_form/paperclip_icon-sz-18p.svg"
+                                                            media="(max-width: 320px)"
+                                                        />
+                                                        <source
+                                                            srcset="img/request_form/paperclip_icon-sz-22p.svg"
+                                                            media="(max-width: 480px)"
+                                                        />
+                                                        <source
+                                                            srcset="img/request_form/paperclip_icon-sz-26p.svg"
+                                                            media="(max-width: 960px)"
+                                                        />
+                                                        <img
+                                                            class="paperclip-icon"
+                                                            src="img/request_form/paperclip_icon-sz-32p.svg"
+                                                            alt="#"
+                                                        />
+                                                    </picture>
+                                                    <p>Прикрепить файл</p>
+                                                </a>
+                                            </div>
+                                            <div class="request-form-bottom-right">
+                                                <ol>
+                                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Aliquam, eligendi.
+                                                    </li>
+                                                    <li>
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa!
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+                                                        iure tenetur?
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="send-request-block">
+                                            <input class="btn-send-request" type="submit" />
+                                            <p class="text-send-request">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
+                                                provident.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
