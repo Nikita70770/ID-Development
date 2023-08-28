@@ -1222,3 +1222,135 @@ body {
 .text-send-request {
     font-size: calc((100vw - 20rem) / (120 - 20) * (1.125 - 0.5) + 0.5rem);
 }
+
+/* Footer */
+
+.footer-inner-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-about {
+    max-width: 49%;
+    width: 100%;
+}
+
+.footer-about-logo {
+    max-width: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer-about-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-about-logo-title {
+    font-family: 'Gilroy-Semibold';
+    font-size: 36px;
+}
+
+.footer-about-content p {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.footer-links {
+    max-width: 19%;
+    width: 100%;
+}
+
+.footer-links-title,
+.footer-feedback-title,
+.footer-social-networks-title {
+    text-align: center;
+    font-family: 'Gilroy-Medium';
+    font-size: 22px;
+}
+
+.footer-links-title {
+}
+
+.footer-links-list {
+    font-size: 16px;
+}
+
+.footer-links-list > * {
+    margin-top: 10px;
+}
+
+.footer-feedback {
+    max-width: 29%;
+    width: 100%;
+}
+
+.footer-feedback-title {
+}
+
+.footer-feedback-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+.footer-feedback-list li {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer-feedback-text h3 {
+    margin-bottom: 5px;
+    font-family: 'Century-Gothic';
+    font-size: 20px;
+}
+
+.footer-feedback-text p {
+    font-size: 12px;
+}
+
+.footer-inner-bottom {
+    margin-top: 50px;
+    padding-top: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-inner-bottom::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #be264c;
+}
+
+.footer-text {
+    max-width: 69%;
+    width: 100%;
+}
+
+.footer-text p {
+    font-size: 16px;
+}
+
+.footer-social-networks {
+    max-width: 29%;
+    width: 100%;
+}
+
+.footer-social-networks-title {
+}
+
+.footer-social-networks-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
