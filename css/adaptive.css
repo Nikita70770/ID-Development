@@ -223,7 +223,6 @@
     }
 
     .request-form-element-2-content {
-        /* max-width: 65%; */
         max-width: 70%;
         top: 6%;
         left: 10%;
@@ -236,6 +235,12 @@
 
     .request-form-right-inner {
         max-width: 100%;
+    }
+
+    /* Footer */
+
+    .footer-links {
+        max-width: 18%;
     }
 }
 
@@ -399,6 +404,38 @@
 
     .request-form-social-network {
         bottom: 10%;
+    }
+
+    /* Footer */
+
+    .footer-inner-top {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .footer-about {
+        max-width: 100%;
+    }
+
+    .footer-about-logo {
+        max-width: 12%;
+    }
+
+    .footer-about-content p {
+        /* margin-top: 30px; */
+        margin-top: calc(15px + 1.5625vw);
+    }
+
+    .footer-links {
+        max-width: 40%;
+    }
+
+    .footer-feedback {
+        max-width: 55%;
+    }
+
+    .footer-social-networks-title {
+        padding-right: 8px;
     }
 }
 
