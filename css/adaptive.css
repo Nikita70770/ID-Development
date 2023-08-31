@@ -434,14 +434,22 @@
         max-width: 55%;
     }
 
-    .footer-social-networks-title {
-        padding-right: 8px;
+    .footer-social-networks {
+        max-width: 20%;
     }
 }
 
 @media (max-width: 600px) {
+    /* Request Form */
+
     .request-form-left {
         height: 90vh;
+    }
+
+    /* Footer */
+
+    .footer-inner-bottom {
+        align-items: flex-start;
     }
 }
 
