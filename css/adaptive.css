@@ -29,12 +29,6 @@
         margin-top: 75px;
         padding-top: 15px;
     }
-
-    /* Services */
-
-    .services {
-        margin-top: 200px;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -144,10 +138,6 @@
 
     /* Services */
 
-    .services {
-        margin-top: 160px;
-    }
-
     .block-service-content {
         margin: 45px 0 70px 0;
     }
@@ -171,10 +161,6 @@
     }
 
     /* Services */
-
-    .services {
-        margin-top: 130px;
-    }
 
     .services-content-header {
         margin-bottom: 110px;
@@ -229,7 +215,6 @@
     }
 
     .request-form-left-title {
-        /* font-size: 38px; */
         font-size: calc((100vw - 20rem) / (60 - 20) * (2.375 - 0.875) + 0.875rem);
     }
 
@@ -264,10 +249,6 @@
     }
 
     /* Services */
-
-    .services {
-        margin-top: 80px;
-    }
 
     .services-content-header {
         margin-bottom: 95px;
@@ -422,7 +403,6 @@
     }
 
     .footer-about-content p {
-        /* margin-top: 30px; */
         margin-top: calc(15px + 1.5625vw);
     }
 
@@ -490,10 +470,6 @@
     }
 
     /* Services */
-
-    .services {
-        margin-top: 135px;
-    }
 
     .services-content-header-line {
         opacity: 0;
@@ -687,10 +663,6 @@
 
     /* Services */
 
-    .services {
-        margin-top: 110px;
-    }
-
     .services-content-header {
         margin-bottom: 60px;
     }
@@ -753,24 +725,10 @@
         left: -23%;
     }
 
-    /* .request-form-element-2 {
-        top: 15%;
-        left: 19%;
-    } */
-
     .request-form-element-2-content {
         top: 1%;
         left: 12%;
     }
-
-    /* .request-form-element-2 {
-        top: 6%;
-    }
-
-    .request-form-element-2-content {
-        top: 6%;
-        left: 10%;
-    } */
 
     .request-form-social-network {
         bottom: 5%;
